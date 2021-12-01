@@ -1,0 +1,101 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: teal;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  z-index: 100;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+
+aside {
+  flex-basis: 200px;
+  border: 1px solid lightgray;
+  overflow-y: scroll;
+}
+
+li.ListBoxItem {
+  padding: 4px;
+  border-bottom: 1px solid lightgray;
+  color: teal;
+  background: white;
+}
+li.ListBoxItem:hover {
+  background: rgba(255, 128, 0, 0.1);
+}
+li.ListBoxItem[data-selected="true"] {
+  background: rgba(255, 128, 0, 0.1);
+}
+
+div.Tabs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+ul.TabHeaders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+li.TabHeader {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: teal;
+  box-shadow: 0 0 2px black;
+  padding: 4px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+}
+li.TabHeader:hover {
+  color: white;
+  background: rgba(0, 128, 128, 0.795);
+}
+li.TabHeader[data-selected="true"] {
+  color: teal;
+  background: white;
+}
+div.TabPanels {
+  flex: 1;
+}
+div.TabPanel {
+  display: none;
+}
+div.TabPanel[data-selected="true"] {
+  display: flex;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+article {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: gray;
+  background: lightgray;
+}
