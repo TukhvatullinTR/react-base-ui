@@ -10,7 +10,7 @@ import { Tabs } from "./components/UI/Tabs";
 
 function App() {
   let Items = [];
-  Array.from(Array(10).keys()).map((i) =>
+  Array.from(Array(100).keys()).map((i) =>
     Items.push({ id: i, title: `List View Item ${i + 1}` })
   );
 
@@ -19,7 +19,7 @@ function App() {
       <Header>Header</Header>
       <Container>
         <SideBar>
-          <ListBox items={Items} />
+          <ListBox items={Items} title="Hello List" />
         </SideBar>
         <Content>
           <SideBar>
